@@ -1,0 +1,34 @@
+@borderColor: grey;
+@background: #efefef;
+@fontSize: 12px;
+.in{
+    width: 198px;
+    height: 198px;
+    border-right: 1px solid @borderColor;
+    background: @background;
+    display: inline-block;
+    position: relative;
+    border-top: 1px solid @borderColor;
+    &:nth-child(4n+1){
+        border-left: 1px solid @borderColor;
+    }
+    &:nth-child(13),&:nth-child(14),&:nth-child(15),&:nth-child(16){
+        border-bottom: 1px solid @borderColor;
+    }
+    &:nth-child(6){
+        border-right: 1px solid transparent;
+    }
+    &:nth-child(10){
+        border-right: 1px solid transparent;
+        border-top: 1px solid transparent;
+    }
+    &:nth-child(11){
+        border-top: 1px solid transparent;
+    }
+    .air{
+        font-size: @fontSize;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+}
