@@ -5,7 +5,8 @@ import React from 'react';
 import ReactDom, {render} from 'react-dom';
 import { VelocityComponent } from 'velocity-react';
 import { createStore } from 'redux';
-import reducer from './actions';
+import reducer from './reducer';
+
 import UL from './userlogin'; //登录
 import SD from './../components/showDetail';//显示详细
 import ID from './inputDetail';//输入出生时间
